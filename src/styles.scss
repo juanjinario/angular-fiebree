@@ -12,7 +12,39 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$angular-fiebree-primary: mat.define-palette(mat.$indigo-palette);
+$fiebre-primary-palette: (
+    50 : #e1e5e6,
+    100 : #b4bdc0,
+    200 : #839196,
+    300 : #51656b,
+    400 : #2b444c,
+    500 : #06232c,
+    600 : #051f27,
+    700 : #041a21,
+    800 : #03151b,
+    900 : #020c10,
+    A100 : #52b5ff,
+    A200 : #1f9fff,
+    A400 : #0087eb,
+    A700 : #0078d2,
+    contrast: (
+        50 : rgba(black, 0.87),
+        100 : rgba(black, 0.87),
+        200 : rgba(black, 0.87),
+        300 : white,
+        400 : white,
+        500 : white,
+        600 : white,
+        700 : white,
+        800 : white,
+        900 : white,
+        A100 : rgba(black, 0.87),
+        A200 : rgba(black, 0.87),
+        A400 : white,
+        A700 : white,
+    )
+);
+$angular-fiebree-primary: mat.define-palette($fiebre-primary-palette);
 $angular-fiebree-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
