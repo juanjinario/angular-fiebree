@@ -1,0 +1,9 @@
+.navigation-wrapper {
+  .navigation-link {
+    cursor: pointer;
+    position: relative;
+    &.active-link {
+      font-weight: bold;
+    }
+  }
+}

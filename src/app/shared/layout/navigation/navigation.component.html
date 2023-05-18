@@ -1,1 +1,31 @@
-<p>navigation works!</p>
+<mat-list class="navigation-wrapper">
+  <div mat-subheader>Navegación</div>
+  <a
+    class="navigation-link"
+    mat-list-item
+    routerLink=""
+    routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    <mat-icon matListItemIcon>dashboard</mat-icon>
+    <div matListItemTitle matListItemTitle>Home</div>
+  </a>
+  <a
+    class="navigation-link"
+    mat-list-item
+    routerLink="buttons"
+    routerLinkActive="active-link"
+  >
+    <mat-icon matListItemIcon>people</mat-icon>
+    <span matListItemTitle>Empleados</span></a
+  >
+  <a
+    class="navigation-link"
+    mat-list-item
+    routerLink="form"
+    routerLinkActive="active-link"
+  >
+    <mat-icon matListItemIcon>dataset</mat-icon>
+    <span matListItemTitle>Formulario</span></a
+  >
+</mat-list>
