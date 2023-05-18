@@ -1,21 +1,25 @@
 <form class="form" [formGroup]="myForm">
   <mat-form-field>
     <mat-label>Input</mat-label>
-    <input matInput formControlName="name" />
+    <input data-cy="name" matInput formControlName="name" />
     <mat-error>Nombre es requerido</mat-error>
   </mat-form-field>
 
   <mat-form-field>
     <mat-label>Select</mat-label>
-    <mat-select formControlName="maritalStatus">
-      <mat-option value="one">First option</mat-option>
-      <mat-option value="two">Second option</mat-option>
+    <mat-select data-cy="maritalStatus" formControlName="maritalStatus">
+      <mat-option value="one">Soltero</mat-option>
+      <mat-option value="two">Casado</mat-option>
     </mat-select>
     <mat-error>Estado civil es requerido</mat-error>
   </mat-form-field>
 
   <mat-form-field>
     <mat-label>Textarea</mat-label>
-    <textarea matInput formControlName="comments"></textarea>
+    <textarea data-cy="comments" matInput formControlName="comments"></textarea>
   </mat-form-field>
+
+  <button data-cy="send" mat-raised-button color="primary" (click)="onSubmit()">
+    Enviar
+  </button>
 </form>

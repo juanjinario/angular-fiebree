@@ -24,7 +24,7 @@ export class HomeComponent {
   onSubmit() {
     if (this.myForm.valid) {
       const formValues = this.myForm.value;
-      console.log(formValues); // Realizar acciones con los valores del formulario
+      console.log(formValues);
     }
   }
 }
